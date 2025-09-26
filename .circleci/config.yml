@@ -30,7 +30,7 @@ jobs:
 
   runner-test:
     machine: true
-    resource_class: zmarkan-demos-namespace/local-mac-runner
+    resource_class: rogerwintercircleci/test-runner
     environment:
       JAVA_HOME: /Users/zmarkan/libs/jdk-11.0.2.jdk/Contents/Home
       ANDROID_SDK_ROOT: /Users/zmarkan/Library/Android/sdk
