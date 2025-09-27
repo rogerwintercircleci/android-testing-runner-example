@@ -1,0 +1,14 @@
+  actual-runner-test:
+    machine: true
+    resource_class: test-runner-namespace/wsl-linux-runner
+    steps:
+      - checkout
+      - run:
+          name: Test on actual runner
+          command: |
+            echo "Running on actual CircleCI runner!"
+            echo "Hostname: DESKTOP-D87BP8V"
+            echo "OS: Linux DESKTOP-D87BP8V 6.6.87.2-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux"
+            echo "Current directory: /mnt/c/circleci"
+            echo "Files:"
+            ls -la
